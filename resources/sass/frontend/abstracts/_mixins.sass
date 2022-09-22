@@ -1,0 +1,223 @@
+@mixin boxSwicth()
+     .switch
+          position: relative
+          margin: 0 .35rem
+          &__input
+               position: absolute
+               cursor: pointer
+               top: 0
+               right: 0
+               left: 0
+               bottom: 0
+               width: 100%
+               height: 100%
+               margin: 0
+               opacity: 0
+               z-index: 1
+               &:checked + .switch__label
+                    background-color: $yellow
+                    &::before
+                         left: calc(100% - 22px)
+                         border: 2px white solid
+                         background-color: $yellow
+                         content: "" 
+          &__label
+               display: block
+               position: relative
+               width: 50px
+               height: 23px
+               background-color: white
+               border: 1px solid $yellow
+               border-radius: 25px
+               transition: 0.4s
+               margin-bottom: 0.15rem
+               &::before
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    position: absolute
+                    top: 50%
+                    transform: translateY(-50%)
+                    right: auto
+                    left: 1px
+                    bottom: 0
+                    width: 21px
+                    height: 21px
+                    border-radius: 100%
+                    border: 2px white solid
+                    background-color: $yellow
+                    color: white
+                    transition: 0.4s
+                    content: ""
+@mixin fontTitle($fontColor)
+     $fontSize1400: 35px 
+     $fontSize1200: 35px
+     $fontSize992: 35px
+     $fontSize: 30px
+     font-family: $fontTitle
+     font-size: $fontSize
+     color: $fontColor
+     line-height: 1em
+     @media screen and (min-width: 992px)
+          font-size: $fontSize992
+          line-height: 1em
+     @media screen and (min-width: 1200px)
+          font-size: $fontSize1200
+          line-height: 1em
+     @media screen and (min-width: 1400px)
+          font-size: $fontSize1400
+          line-height: 1em
+@mixin fontSubTitle($fontColor, $fontFamily : false)
+     $fontSize1400: 16px 
+     $fontSize1200: 14px
+     $fontSize992: 14px
+     $fontSize: 14px
+     @if $fontFamily
+          font-family: $fontFamily
+     @else
+          font-family: $fontSubTitle
+     font-size: $fontSize
+     color: $fontColor
+     line-height: 1em
+     @media screen and (min-width: 992px)
+          font-size: $fontSize992
+          line-height: 1em
+     @media screen and (min-width: 1200px)
+          font-size: $fontSize1200
+          line-height: 1em
+     @media screen and (min-width: 1400px)
+          font-size: $fontSize1400
+          line-height: 1em
+@mixin fontDescription($fontColor)
+     $fontSize1400: 22px 
+     $fontSize1200: 22px
+     $fontSize992: 22px
+     $fontSize: 20px
+     font-family: $fontDescription
+     font-size: $fontSize
+     color: $fontColor
+     line-height: 1.25em
+     text-align: left
+     @media screen and (min-width: 992px)
+          font-size: $fontSize992
+          line-height: 1em
+     @media screen and (min-width: 1200px)
+          font-size: $fontSize1200
+          line-height: 1em
+     @media screen and (min-width: 1400px)
+          font-size: $fontSize1400
+          line-height: 1em
+@mixin fontInput($fontColor)
+     $fontSize1400: 14px 
+     $fontSize1200: 14px
+     $fontSize992: 14px
+     $fontSize: 14px
+     font-family: $fontDescription
+     font-size: $fontSize
+     color: $fontColor
+     line-height: 1.5rem
+     @media screen and (min-width: 992px)
+          font-size: $fontSize992
+          line-height: 1.5rem
+     @media screen and (min-width: 1200px)
+          font-size: $fontSize1200
+          line-height: 1.5rem
+     @media screen and (min-width: 1400px)
+          font-size: $fontSize1400
+          line-height: 1.5rem
+@mixin fontFree($fontColor, $fontSize1400,$fontSize1200,$fontSize992,$fontSize, $fontText)
+     font-family: $fontText
+     font-size: $fontSize
+     color: $fontColor
+     @media screen and (min-width: 992px)
+          font-size: $fontSize992
+     @media screen and (min-width: 1200px)
+          font-size: $fontSize1200
+     @media screen and (min-width: 1400px)
+          font-size: $fontSize1400
+@mixin styleButton($backgroundColor: false)
+     // width: 78px
+     padding: .25rem 2.5rem
+     text-decoration: none 
+     border-radius: 30px
+     border: 1px solid $whiteLight
+     text-align: center
+     $fontSize1400: 30px 
+     $fontSize1200: 30px
+     $fontSize992: 30px
+     $fontSize: 20px
+     font-family: $fontButtom
+     letter-spacing: .075em
+     font-size: $fontSize
+     color: $whiteLight
+     background: $backgroundColor
+     @media screen and (min-width: 992px)
+          font-size: $fontSize992
+          // line-height: 1.5em
+     @media screen and (min-width: 1200px)
+          font-size: $fontSize1200
+          // line-height: 1.5em
+     @media screen and (min-width: 1400px)
+          font-size: $fontSize1400
+          // line-height: 1.5em
+     &:focus,
+     &.active,
+     &:hover
+          color: white
+          outline: none
+@mixin styleLink($fontColor)
+     text-decoration: none
+     $fontSize1400: 14px 
+     $fontSize1200: 14px
+     $fontSize992: 14px
+     $fontSize: 14px
+     font-family: $fontlink
+     font-size: $fontSize
+     color: $fontColor
+     transition: 0.5s ease color
+     @media screen and (min-width: 992px)
+          font-size: $fontSize992
+     @media screen and (min-width: 1200px)
+          font-size: $fontSize1200
+     @media screen and (min-width: 1400px)
+          font-size: $fontSize1400
+     &:hover
+          color: $fontColor
+     &:focus
+          outline: none   
+          box-shadow: none
+@mixin fontMainMenu($fontColor, $fontColorHover)
+     $fontSize1400: 14px 
+     $fontSize1200: 14px
+     $fontSize992: 14px
+     $fontSize: 14px
+     font-family: $fontDescription
+     font-size: $fontSize
+     color: $fontColor
+     line-height: 1.15em
+     transition: .5s ease-in color
+     @media screen and (min-width: 992px)
+          font-size: $fontSize992
+     @media screen and (min-width: 1200px)
+          font-size: $fontSize1200
+     @media screen and (min-width: 1400px)
+          font-size: $fontSize1400
+     &:hover,
+     &.active
+          color: $fontColorHover
+
+// Animaciones
+
+@keyframes ldio-dzc1st7xsju
+     0%, 100% 
+          animation-timing-function: cubic-bezier(0.45,0,0.9,0.55)
+     
+     0% 
+          transform: translate(0,0)
+     
+     50%
+          transform: translate(0,20px)
+          animation-timing-function: cubic-bezier(0,0.45,0.55,0.9)
+     
+     100% 
+          transform: translate(0,0)

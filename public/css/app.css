@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'GothamMedium';
+    src: url(/fonts/GothamMedium.eot?bfe93d4d547b3233a1005379e660f1b3);
+    src: url(/fonts/GothamMedium.eot?bfe93d4d547b3233a1005379e660f1b3?#iefix) format('embedded-opentype'),
+        url(/fonts/GothamMedium.woff2?bc6f581b5e15f62efd051c281f9b1282) format('woff2'),
+        url(/fonts/GothamMedium.woff?128f33ca016af75646fa3d1b6e0daa4c) format('woff'),
+        url(/fonts/GothamMedium.ttf?00d6e9e9c66db061e34f8d559d3b42e8) format('truetype'),
+        url(/fonts/GothamMedium.svg?6308eb7f1e6f5b287519c73a79623355#GothamMedium) format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'GothamBlack';
+     src: url(/fonts/Gotham-Black.eot?6083fbc3757b6acd88346ac78ca1c051);
+     src: url(/fonts/Gotham-Black.eot?6083fbc3757b6acd88346ac78ca1c051?#iefix) format('embedded-opentype'),
+         url(/fonts/Gotham-Black.woff2?698c99176a839fca092fdca15e34a8d3) format('woff2'),
+         url(/fonts/Gotham-Black.woff?b27625859f1223afaa6ccd659ee8a9b3) format('woff'),
+         url(/fonts/Gotham-Black.ttf?78c7d263a7f5cc6058b2421f01d88533) format('truetype'),
+         url(/fonts/Gotham-Black.svg?9cc07cb84731e3ab5ac090d90088b389#Gotham-Black) format('svg');
+     font-weight: 500;
+     font-style: normal;
+     font-display: swap;
+ }
+ 
+ @font-face {
+     font-family: 'Gotham';
+     src: url(/fonts/Gotham-Light.eot?39e377c23a266a0776c001b8711bd274);
+     src: url(/fonts/Gotham-Light.eot?39e377c23a266a0776c001b8711bd274?#iefix) format('embedded-opentype'),
+         url(/fonts/Gotham-Light.woff2?7c1d7aaf0030243b05434507236bf242) format('woff2'),
+         url(/fonts/Gotham-Light.woff?ce1f978c78db6a9e68a2ecdb7ca8bacf) format('woff'),
+         url(/fonts/Gotham-Light.ttf?4f529c87b0d7b97a18e861657b4147c0) format('truetype'),
+         url(/fonts/Gotham-Light.svg?2d0b3a44709752feb8e81df926f52b89#Gotham-Light) format('svg');
+     font-weight: 300;
+     font-style: normal;
+     font-display: swap;
+ }
+ 
+ 

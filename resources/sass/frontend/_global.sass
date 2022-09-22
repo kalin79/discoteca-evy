@@ -1,0 +1,73 @@
+a
+     text-decoration: none
+     &:focus,
+     &:hover
+          outline: transparent
+          box-shadow: none
+h1,
+h2,
+h3,
+p
+     margin: 0 
+.contentBlur
+     &.active
+          filter: blur(2px)
+
+
+body
+     background: $blackLight
+.relative
+     position: relative !important
+.circleTop
+     position: absolute
+     bottom: 0rem
+     right: 0
+     @media screen and (max-height: 500px)
+          display: none
+     img
+          width: 120px
+.circleBottom
+     position: absolute
+     top: 0rem
+     left: 0
+     img
+          width: 100px
+
+button
+     @include styleButton($blackDark3)
+.buttonSeparate
+     margin-top: 1.25rem
+     @media screen and (min-width: 992px)
+          margin-top: 2.5rem
+
+.viewPage
+     min-height: 100vh
+h1,
+h2
+     @include fontTitle($whiteLight2)
+p
+     @include fontDescription($whiteLight2)
+.txtCenter
+     text-align: center !important
+.txtRight
+     text-align: right !important
+.boxDatos
+     p
+          text-align: center
+     .boxZona
+          background: white
+          padding: 1rem
+          margin-top: 1.5rem
+          p
+               color: $blackDark5
+     .boxCliente
+          margin-top: 1.5rem
+          p
+               font-family: $fontButtom
+               font-size: 30px
+               @media screen and (min-width: 992px)
+                    font-size: 40px
+               @media screen and (min-width: 1200px)
+                    font-size: 40px
+               @media screen and (min-width: 1400px)
+                    font-size: 40px

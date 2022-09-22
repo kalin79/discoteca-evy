@@ -1,0 +1,100 @@
+input[type="text"],
+input[type="password"]
+     font-size: 24px
+     border-radius: 50px
+     color: $blackDark4
+     font-family: $fontDescription
+     background-color: $blackDark5
+     border: 1px solid $blackDark5 
+     padding: 0.65rem 2.0rem
+     text-align: center
+     width: auto
+     @media screen and (min-width: 992px)
+          font-size: 49px
+          padding: 0.95rem 4.5rem
+     &:focus,
+     &:active,
+     &:hover
+          outline: none !important
+          box-shadow: none !important
+          background-color: $blackDark5 !important
+          border-color: none !important
+          border: 1px solid $blackDark5 !important
+          color: $blackDark4 !important
+     &::placeholder
+          color: $blackDark4
+          text-transform: uppercase
+
+.boxFormRegister
+     margin-top: 4rem
+     // @media screen and (min-width: 992px)
+     //      margin-top: 2rem
+     input[type="text"]
+          text-align: left
+.error
+     color: red
+     font-size: 20px
+     font-family: $fontDescription
+     margin-top: .75rem
+     display: none
+     &.active
+          display: block
+.form-select
+     font-size: 18px
+     border-radius: 50px
+     color: $blackDark4
+     font-family: $fontDescription
+     background-color: $blackDark5
+     border: 1px solid $blackDark5 
+     // padding: 0.95rem 3.5rem
+     text-align: center
+     @media screen and (min-width: 992px)
+          font-size: 49px
+          // padding: 0.95rem 4.5rem
+     &:focus,
+     &:active,
+     &:hover
+          outline: none !important
+          box-shadow: none !important
+          background-color: $blackDark5 !important
+          border-color: none !important
+          border: 1px solid $blackDark5 !important
+          color: $blackDark4 !important
+     &::placeholder
+          color: $blackDark4
+          text-transform: uppercase
+input:-internal-autofill-selected
+     border-radius: 50px !important
+     color: $blackDark4 !important
+     background-color: $blackDark5 !important
+
+input:-webkit-autofill
+     outline: none !important
+     box-shadow: none !important
+     background-color: $blackDark5 !important
+     border-color: none !important
+     border: 1px solid $blackDark5 !important
+     color: $blackDark4 !important
+
+.pageRegister
+     padding-bottom: 18rem 
+     padding-top: 8.5rem
+     padding-left: .65rem
+     padding-right: .65rem
+     @media screen and (min-width: 992px)
+          padding-left: 0rem
+          padding-right: 0rem
+     input[type="text"],
+     input[type="password"]
+          font-size: 18px
+          padding: 0.45rem 2.5rem
+          width: 100%
+          @media screen and (min-width: 992px)
+               width: 100%
+               font-size: 49px
+               padding: 0.95rem 4.5rem
+.pageCode
+     border: 0px solid red
+     height: 100vh
+     input[type="text"]
+          text-transform: uppercase

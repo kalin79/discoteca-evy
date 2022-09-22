@@ -1,0 +1,324 @@
+{
+  "resources/fonts/ABCDiatype/ABCDiatype-Thin.eot": {
+    "file": "assets/ABCDiatype-Thin.c7fbe665.eot",
+    "src": "resources/fonts/ABCDiatype/ABCDiatype-Thin.eot"
+  },
+  "resources/fonts/ABCDiatype/ABCDiatype-Medium.eot": {
+    "file": "assets/ABCDiatype-Medium.22d69dcf.eot",
+    "src": "resources/fonts/ABCDiatype/ABCDiatype-Medium.eot"
+  },
+  "resources/fonts/ABCDiatype/ABCDiatype-Light.eot": {
+    "file": "assets/ABCDiatype-Light.d927a8b8.eot",
+    "src": "resources/fonts/ABCDiatype/ABCDiatype-Light.eot"
+  },
+  "resources/fonts/ABCDiatype/HookTRIAL-Regular.eot": {
+    "file": "assets/HookTRIAL-Regular.94b4acdd.eot",
+    "src": "resources/fonts/ABCDiatype/HookTRIAL-Regular.eot"
+  },
+  "resources/fonts/dinot/DINOT-Bold.eot": {
+    "file": "assets/DINOT-Bold.5b9f9fc3.eot",
+    "src": "resources/fonts/dinot/DINOT-Bold.eot"
+  },
+  "resources/fonts/dinot/DINOT-Light.eot": {
+    "file": "assets/DINOT-Light.56bf6914.eot",
+    "src": "resources/fonts/dinot/DINOT-Light.eot"
+  },
+  "resources/fonts/dinot/DINOT-Medium.eot": {
+    "file": "assets/DINOT-Medium.3f7cd8cd.eot",
+    "src": "resources/fonts/dinot/DINOT-Medium.eot"
+  },
+  "resources/fonts/dinot/DINPro-Bold.eot": {
+    "file": "assets/DINPro-Bold.efc1b892.eot",
+    "src": "resources/fonts/dinot/DINPro-Bold.eot"
+  },
+  "resources/fonts/dinot/DINOT-Regular.eot": {
+    "file": "assets/DINOT-Regular.2f441e43.eot",
+    "src": "resources/fonts/dinot/DINOT-Regular.eot"
+  },
+  "resources/fonts/dinot/DINPro.eot": {
+    "file": "assets/DINPro.8cca28cc.eot",
+    "src": "resources/fonts/dinot/DINPro.eot"
+  },
+  "resources/fonts/poppins/Poppins-Regular.eot": {
+    "file": "assets/Poppins-Regular.43913d59.eot",
+    "src": "resources/fonts/poppins/Poppins-Regular.eot"
+  },
+  "resources/fonts/russo/RussoOne-Regular.eot": {
+    "file": "assets/RussoOne-Regular.f45c9732.eot",
+    "src": "resources/fonts/russo/RussoOne-Regular.eot"
+  },
+  "resources/fonts/poppins/Poppins-Bold.eot": {
+    "file": "assets/Poppins-Bold.c47e6241.eot",
+    "src": "resources/fonts/poppins/Poppins-Bold.eot"
+  },
+  "resources/fonts/poppins/Poppins-SemiBold.eot": {
+    "file": "assets/Poppins-SemiBold.2ac11349.eot",
+    "src": "resources/fonts/poppins/Poppins-SemiBold.eot"
+  },
+  "resources/fonts/poppins/Poppins-Medium.eot": {
+    "file": "assets/Poppins-Medium.811fe3b3.eot",
+    "src": "resources/fonts/poppins/Poppins-Medium.eot"
+  },
+  "resources/fonts/ABCDiatype/ABCDiatype-Thin.woff2": {
+    "file": "assets/ABCDiatype-Thin.866f7e59.woff2",
+    "src": "resources/fonts/ABCDiatype/ABCDiatype-Thin.woff2"
+  },
+  "resources/fonts/ABCDiatype/ABCDiatype-Medium.woff2": {
+    "file": "assets/ABCDiatype-Medium.95c97817.woff2",
+    "src": "resources/fonts/ABCDiatype/ABCDiatype-Medium.woff2"
+  },
+  "resources/fonts/ABCDiatype/HookTRIAL-Regular.woff2": {
+    "file": "assets/HookTRIAL-Regular.6a3ff347.woff2",
+    "src": "resources/fonts/ABCDiatype/HookTRIAL-Regular.woff2"
+  },
+  "resources/fonts/ABCDiatype/ABCDiatype-Light.woff2": {
+    "file": "assets/ABCDiatype-Light.4ddb3b8f.woff2",
+    "src": "resources/fonts/ABCDiatype/ABCDiatype-Light.woff2"
+  },
+  "resources/fonts/dinot/DINOT-Bold.woff2": {
+    "file": "assets/DINOT-Bold.3aaa7e23.woff2",
+    "src": "resources/fonts/dinot/DINOT-Bold.woff2"
+  },
+  "resources/fonts/dinot/DINOT-Light.woff2": {
+    "file": "assets/DINOT-Light.853f9d55.woff2",
+    "src": "resources/fonts/dinot/DINOT-Light.woff2"
+  },
+  "resources/fonts/dinot/DINOT-Medium.woff2": {
+    "file": "assets/DINOT-Medium.999207dc.woff2",
+    "src": "resources/fonts/dinot/DINOT-Medium.woff2"
+  },
+  "resources/fonts/dinot/DINPro-Bold.woff2": {
+    "file": "assets/DINPro-Bold.a5696126.woff2",
+    "src": "resources/fonts/dinot/DINPro-Bold.woff2"
+  },
+  "resources/fonts/dinot/DINOT-Regular.woff2": {
+    "file": "assets/DINOT-Regular.0de90461.woff2",
+    "src": "resources/fonts/dinot/DINOT-Regular.woff2"
+  },
+  "resources/fonts/poppins/Poppins-Regular.woff2": {
+    "file": "assets/Poppins-Regular.bedc39ba.woff2",
+    "src": "resources/fonts/poppins/Poppins-Regular.woff2"
+  },
+  "resources/fonts/dinot/DINPro.woff2": {
+    "file": "assets/DINPro.cc079264.woff2",
+    "src": "resources/fonts/dinot/DINPro.woff2"
+  },
+  "resources/fonts/poppins/Poppins-Bold.woff2": {
+    "file": "assets/Poppins-Bold.ecb7adbc.woff2",
+    "src": "resources/fonts/poppins/Poppins-Bold.woff2"
+  },
+  "resources/fonts/russo/RussoOne-Regular.woff2": {
+    "file": "assets/RussoOne-Regular.7feefea8.woff2",
+    "src": "resources/fonts/russo/RussoOne-Regular.woff2"
+  },
+  "resources/fonts/poppins/Poppins-SemiBold.woff2": {
+    "file": "assets/Poppins-SemiBold.6603613b.woff2",
+    "src": "resources/fonts/poppins/Poppins-SemiBold.woff2"
+  },
+  "resources/fonts/poppins/Poppins-Medium.woff2": {
+    "file": "assets/Poppins-Medium.12fa0a6a.woff2",
+    "src": "resources/fonts/poppins/Poppins-Medium.woff2"
+  },
+  "resources/fonts/ABCDiatype/ABCDiatype-Thin.woff": {
+    "file": "assets/ABCDiatype-Thin.e98bf036.woff",
+    "src": "resources/fonts/ABCDiatype/ABCDiatype-Thin.woff"
+  },
+  "resources/fonts/ABCDiatype/HookTRIAL-Regular.woff": {
+    "file": "assets/HookTRIAL-Regular.b8834630.woff",
+    "src": "resources/fonts/ABCDiatype/HookTRIAL-Regular.woff"
+  },
+  "resources/fonts/dinot/DINOT-Bold.woff": {
+    "file": "assets/DINOT-Bold.abe9ac14.woff",
+    "src": "resources/fonts/dinot/DINOT-Bold.woff"
+  },
+  "resources/fonts/ABCDiatype/ABCDiatype-Light.woff": {
+    "file": "assets/ABCDiatype-Light.0cc83f58.woff",
+    "src": "resources/fonts/ABCDiatype/ABCDiatype-Light.woff"
+  },
+  "resources/fonts/dinot/DINOT-Light.woff": {
+    "file": "assets/DINOT-Light.a30f953c.woff",
+    "src": "resources/fonts/dinot/DINOT-Light.woff"
+  },
+  "resources/fonts/dinot/DINOT-Medium.woff": {
+    "file": "assets/DINOT-Medium.f961f244.woff",
+    "src": "resources/fonts/dinot/DINOT-Medium.woff"
+  },
+  "resources/fonts/dinot/DINOT-Regular.woff": {
+    "file": "assets/DINOT-Regular.3cc9accb.woff",
+    "src": "resources/fonts/dinot/DINOT-Regular.woff"
+  },
+  "resources/fonts/dinot/DINPro-Bold.woff": {
+    "file": "assets/DINPro-Bold.bccd7307.woff",
+    "src": "resources/fonts/dinot/DINPro-Bold.woff"
+  },
+  "resources/fonts/poppins/Poppins-Regular.woff": {
+    "file": "assets/Poppins-Regular.ad5fb58a.woff",
+    "src": "resources/fonts/poppins/Poppins-Regular.woff"
+  },
+  "resources/fonts/dinot/DINPro.woff": {
+    "file": "assets/DINPro.d78f0f63.woff",
+    "src": "resources/fonts/dinot/DINPro.woff"
+  },
+  "resources/fonts/ABCDiatype/ABCDiatype-Medium.woff": {
+    "file": "assets/ABCDiatype-Medium.e10b3625.woff",
+    "src": "resources/fonts/ABCDiatype/ABCDiatype-Medium.woff"
+  },
+  "resources/fonts/russo/RussoOne-Regular.woff": {
+    "file": "assets/RussoOne-Regular.c37a3910.woff",
+    "src": "resources/fonts/russo/RussoOne-Regular.woff"
+  },
+  "resources/fonts/poppins/Poppins-Bold.woff": {
+    "file": "assets/Poppins-Bold.28bf02b4.woff",
+    "src": "resources/fonts/poppins/Poppins-Bold.woff"
+  },
+  "resources/fonts/poppins/Poppins-SemiBold.woff": {
+    "file": "assets/Poppins-SemiBold.90751a7a.woff",
+    "src": "resources/fonts/poppins/Poppins-SemiBold.woff"
+  },
+  "resources/fonts/poppins/Poppins-Medium.woff": {
+    "file": "assets/Poppins-Medium.6dfdf411.woff",
+    "src": "resources/fonts/poppins/Poppins-Medium.woff"
+  },
+  "resources/fonts/ABCDiatype/ABCDiatype-Thin.ttf": {
+    "file": "assets/ABCDiatype-Thin.ff0cd1be.ttf",
+    "src": "resources/fonts/ABCDiatype/ABCDiatype-Thin.ttf"
+  },
+  "resources/fonts/ABCDiatype/HookTRIAL-Regular.ttf": {
+    "file": "assets/HookTRIAL-Regular.2e922c0b.ttf",
+    "src": "resources/fonts/ABCDiatype/HookTRIAL-Regular.ttf"
+  },
+  "resources/fonts/dinot/DINOT-Bold.ttf": {
+    "file": "assets/DINOT-Bold.e5a5ee74.ttf",
+    "src": "resources/fonts/dinot/DINOT-Bold.ttf"
+  },
+  "resources/fonts/ABCDiatype/ABCDiatype-Light.ttf": {
+    "file": "assets/ABCDiatype-Light.708a4f24.ttf",
+    "src": "resources/fonts/ABCDiatype/ABCDiatype-Light.ttf"
+  },
+  "resources/fonts/dinot/DINOT-Light.ttf": {
+    "file": "assets/DINOT-Light.2e906a72.ttf",
+    "src": "resources/fonts/dinot/DINOT-Light.ttf"
+  },
+  "resources/fonts/dinot/DINOT-Medium.ttf": {
+    "file": "assets/DINOT-Medium.3e119ced.ttf",
+    "src": "resources/fonts/dinot/DINOT-Medium.ttf"
+  },
+  "resources/fonts/dinot/DINOT-Regular.ttf": {
+    "file": "assets/DINOT-Regular.162b4965.ttf",
+    "src": "resources/fonts/dinot/DINOT-Regular.ttf"
+  },
+  "resources/fonts/dinot/DINPro-Bold.ttf": {
+    "file": "assets/DINPro-Bold.6392c289.ttf",
+    "src": "resources/fonts/dinot/DINPro-Bold.ttf"
+  },
+  "resources/fonts/poppins/Poppins-Regular.ttf": {
+    "file": "assets/Poppins-Regular.f3c63b87.ttf",
+    "src": "resources/fonts/poppins/Poppins-Regular.ttf"
+  },
+  "resources/fonts/dinot/DINPro.ttf": {
+    "file": "assets/DINPro.f86485e7.ttf",
+    "src": "resources/fonts/dinot/DINPro.ttf"
+  },
+  "resources/fonts/ABCDiatype/ABCDiatype-Medium.ttf": {
+    "file": "assets/ABCDiatype-Medium.fbdc9ed9.ttf",
+    "src": "resources/fonts/ABCDiatype/ABCDiatype-Medium.ttf"
+  },
+  "resources/fonts/russo/RussoOne-Regular.ttf": {
+    "file": "assets/RussoOne-Regular.f01a8702.ttf",
+    "src": "resources/fonts/russo/RussoOne-Regular.ttf"
+  },
+  "resources/fonts/poppins/Poppins-Bold.ttf": {
+    "file": "assets/Poppins-Bold.5da7d5e2.ttf",
+    "src": "resources/fonts/poppins/Poppins-Bold.ttf"
+  },
+  "resources/fonts/poppins/Poppins-SemiBold.ttf": {
+    "file": "assets/Poppins-SemiBold.14159ffa.ttf",
+    "src": "resources/fonts/poppins/Poppins-SemiBold.ttf"
+  },
+  "resources/fonts/poppins/Poppins-Medium.ttf": {
+    "file": "assets/Poppins-Medium.665d2751.ttf",
+    "src": "resources/fonts/poppins/Poppins-Medium.ttf"
+  },
+  "resources/fonts/ABCDiatype/HookTRIAL-Regular.svg": {
+    "file": "assets/HookTRIAL-Regular.ab751e48.svg",
+    "src": "resources/fonts/ABCDiatype/HookTRIAL-Regular.svg"
+  },
+  "resources/fonts/dinot/DINOT-Bold.svg": {
+    "file": "assets/DINOT-Bold.c392090e.svg",
+    "src": "resources/fonts/dinot/DINOT-Bold.svg"
+  },
+  "resources/fonts/dinot/DINOT-Light.svg": {
+    "file": "assets/DINOT-Light.b01a5026.svg",
+    "src": "resources/fonts/dinot/DINOT-Light.svg"
+  },
+  "resources/fonts/dinot/DINOT-Medium.svg": {
+    "file": "assets/DINOT-Medium.192f0258.svg",
+    "src": "resources/fonts/dinot/DINOT-Medium.svg"
+  },
+  "resources/fonts/dinot/DINOT-Regular.svg": {
+    "file": "assets/DINOT-Regular.41111119.svg",
+    "src": "resources/fonts/dinot/DINOT-Regular.svg"
+  },
+  "resources/fonts/poppins/Poppins-Regular.svg": {
+    "file": "assets/Poppins-Regular.a698b7e6.svg",
+    "src": "resources/fonts/poppins/Poppins-Regular.svg"
+  },
+  "resources/fonts/poppins/Poppins-Bold.svg": {
+    "file": "assets/Poppins-Bold.e349b585.svg",
+    "src": "resources/fonts/poppins/Poppins-Bold.svg"
+  },
+  "resources/fonts/russo/RussoOne-Regular.svg": {
+    "file": "assets/RussoOne-Regular.1c05d052.svg",
+    "src": "resources/fonts/russo/RussoOne-Regular.svg"
+  },
+  "resources/fonts/ABCDiatype/ABCDiatype-Thin.svg": {
+    "file": "assets/ABCDiatype-Thin.895b3a6b.svg",
+    "src": "resources/fonts/ABCDiatype/ABCDiatype-Thin.svg"
+  },
+  "resources/fonts/ABCDiatype/ABCDiatype-Light.svg": {
+    "file": "assets/ABCDiatype-Light.ba33e5ec.svg",
+    "src": "resources/fonts/ABCDiatype/ABCDiatype-Light.svg"
+  },
+  "resources/fonts/ABCDiatype/ABCDiatype-Medium.svg": {
+    "file": "assets/ABCDiatype-Medium.1d27f8d5.svg",
+    "src": "resources/fonts/ABCDiatype/ABCDiatype-Medium.svg"
+  },
+  "resources/fonts/dinot/DINPro.svg": {
+    "file": "assets/DINPro.e7e02ae2.svg",
+    "src": "resources/fonts/dinot/DINPro.svg"
+  },
+  "resources/fonts/poppins/Poppins-SemiBold.svg": {
+    "file": "assets/Poppins-SemiBold.b069139a.svg",
+    "src": "resources/fonts/poppins/Poppins-SemiBold.svg"
+  },
+  "resources/fonts/dinot/DINPro-Bold.svg": {
+    "file": "assets/DINPro-Bold.ee143227.svg",
+    "src": "resources/fonts/dinot/DINPro-Bold.svg"
+  },
+  "resources/fonts/poppins/Poppins-Medium.svg": {
+    "file": "assets/Poppins-Medium.8354f653.svg",
+    "src": "resources/fonts/poppins/Poppins-Medium.svg"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app.046e7b7a.js",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "css": [
+      "assets/app.63e90e65.css"
+    ]
+  },
+  "resources/css/fonts.css": {
+    "file": "assets/fonts.52f47370.css",
+    "src": "resources/css/fonts.css",
+    "isEntry": true
+  },
+  "resources/sass/app.scss": {
+    "file": "assets/app.677ac21e.css",
+    "src": "resources/sass/app.scss",
+    "isEntry": true
+  },
+  "resources/js/app.css": {
+    "file": "assets/app.63e90e65.css",
+    "src": "resources/js/app.css"
+  }
+}
