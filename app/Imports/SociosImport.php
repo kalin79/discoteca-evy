@@ -62,7 +62,7 @@ class SociosImport implements ToArray
                             'codigo' => $codigo,
                             'dni_promotor'=> $dni_promotor,
                             'promotor_id' =>$promotor_id,
-                            'tipo_ubicacion_id' => TypeUbicacion::DISCOTECA,
+                            'tipo_ubicacion_id' => TypeUbicacion::TERRAZA,
                             'usuario_registra_id' => auth()->user()->id,
                             // 'evento_id'            =>$this->evento_id
                         ];

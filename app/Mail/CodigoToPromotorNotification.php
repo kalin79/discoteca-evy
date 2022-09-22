@@ -32,7 +32,7 @@ class CodigoToPromotorNotification extends Mailable
     public function build()
     {
 
-        $subject = 'Lista de Codigos Armoni - '.$this->evento->nombre." - " .$this->evento_promotor->zona->nombre ;
+        $subject = 'Lista de Codigos Envy - '.$this->evento->nombre." - " .$this->evento_promotor->zona->nombre ;
 
         $email = $this->subject( $subject )->view('mail.codigos-evento-promotor', ['promotor'=>$this->promotor,'evento'=>$this->evento,'evento_promotor_id'=>$this->evento_promotor->id] );
         // ->bcc('leslie@workaholics.pe');

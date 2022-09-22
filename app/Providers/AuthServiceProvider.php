@@ -29,19 +29,19 @@ class AuthServiceProvider extends ServiceProvider
         $this->registerPolicies();
 
         
-        $roles = Role::where('active', true)->with('permission')->get();
-        $permissionArray = [];
-        foreach ($roles as $role) {
-            foreach ($role->permission as $permission) {
-                $permissionArray[$permission->name][] = $role->id;
-            }
-        }
-        foreach ($permissionArray as $title => $roles) {
+        // $roles = Role::where('active', true)->with('permission')->get();
+        // $permissionArray = [];
+        // foreach ($roles as $role) {
+        //     foreach ($role->permission as $permission) {
+        //         $permissionArray[$permission->name][] = $role->id;
+        //     }
+        // }
+        // foreach ($permissionArray as $title => $roles) {
 
-            Gate::define($title, function (User $user) use ($roles) {
-                return !! count(array_intersect($user->role->pluck('id')->toArray(), $roles));
-            });
-        }
+        //     Gate::define($title, function (User $user) use ($roles) {
+        //         return !! count(array_intersect($user->role->pluck('id')->toArray(), $roles));
+        //     });
+        // }
         
         
     }

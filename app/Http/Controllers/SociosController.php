@@ -69,7 +69,7 @@ class SociosController extends Controller
     public function store(Request $request)
     {
         if(!$request->ajax()) return redirect('/');
-        $request['tipo_ubicacion_id'] = TypeUbicacion::DISCOTECA;
+        $request['tipo_ubicacion_id'] = TypeUbicacion::TERRAZA;
         $data = $request->all();
 
         $socio = Socio::create($data);
