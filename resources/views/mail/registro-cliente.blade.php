@@ -2,7 +2,7 @@
     <table width="800" align="center" border="0" cellspacing="0" cellpadding="0">
         <tr width="800" height="337" style="background:#222222">
             <td width="800"  valign="top" height="337" >
-                <img src="https://codegraph.pe/disco/1_01.jpg" width="800" height="337" style="display:block;width:800px;height:337px;border:0;padding:0;margin:0">
+                <img src="https://codegraph.pe/disco/mail.jpg" width="800" height="337" style="display:block;width:800px;height:337px;border:0;padding:0;margin:0">
             </td>
         </tr>
         <tr width="800" height="201" style="background:#222222">
@@ -58,7 +58,7 @@
         </tr>
         <tr width="800" height="391" style="background:#222222">
             <td width="800"  valign="top" height="391" >
-                 <img src="https://codegraph.pe/disco/1_06.jpg" width="800" height="391" style="display:block;width:800px;height:391px;border:0;padding:0;margin:0">
+                 <img src="https://codegraph.pe/disco/2_06.jpg" width="800" height="391" style="display:block;width:800px;height:391px;border:0;padding:0;margin:0">
             </td>
         </tr>
     </table>

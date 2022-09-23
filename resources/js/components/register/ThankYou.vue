@@ -3,7 +3,7 @@
           <div class="container">
                <div class="d-flex justify-content-start align-items-center flex-column">
                     <div class="boxLogoIco">
-                         <img src="/frontend/logo2.png" alt="">
+                         <img src="/frontend/iconlogo.png" alt="">
                     </div>
                     <!-- <div class="boxLogo">
                          <img src="/frontend/logo.svg" >
@@ -12,7 +12,7 @@
                          <h1 class="txtCenter mt-4">¡Gracias por registrarte!</h1>
                          <p class="txtCenter mt-2">
                               No olvides verificar si te llegó <br>
-                              la invitacion al mail1
+                              la invitacion al mail.
                          </p>
                     </div>
                     <div class="boxQr">
@@ -45,7 +45,7 @@
                          <div>
                               <h2 class="txtRight bold">INGREO VÁLIDO</h2>
                               <p class="txtRight">HASTA LAS 12:30 A.M.</p>
-                              <p class="mt-2 txtRight bold">& MAYORES DE 27</p>
+                              <p class="mt-2 txtRight bold">& MAYORES DE 30</p>
                          </div>
                     </div>
 

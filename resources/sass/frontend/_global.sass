@@ -15,7 +15,9 @@ p
 
 
 body
-     background: $blackLight
+     background-image: url('/frontend/fondo.jpg')
+     background-repeat: repeat
+
 .relative
      position: relative !important
 .circleTop
@@ -71,3 +73,10 @@ p
                     font-size: 40px
                @media screen and (min-width: 1400px)
                     font-size: 40px
+.pageError
+     h3
+          @include fontTitle(white)
+     .boxLogoError
+          margin-bottom: 1.5rem    
+          img
+               width: 200px

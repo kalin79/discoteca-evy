@@ -64,7 +64,7 @@
           <div class="d-flex justify-content-center align-items-center boxCenter">
                <div class="card">
                     <div class="d-flex justify-content-center align-items-center boxLogo">
-                         <img src="{{ asset('frontend/logo.svg') }}" />
+                         <img src="{{ asset('frontend/logo3.png') }}" />
                     </div>
                     <div class="card-body">
                         <form method="POST" action="{{route('socio.store.qr',$socio->id)}}">
