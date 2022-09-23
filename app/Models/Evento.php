@@ -23,11 +23,13 @@ class Evento extends Model
     }
 
     public function getCantidadCodigoAttribute(){
-        $cant = 0;
-        foreach ($this->eventoPromotores as $eventoPromotore){
-            $cant = $cant+ $eventoPromotore->sum('cantidad_codigos');
-        }
+        // $cant = 0;
+        // foreach ($this->eventoPromotores as $eventoPromotore){
+        //     $cant = $cant+ $eventoPromotore->sum('cantidad_codigos');
+        // }
 
-        return $cant;
+        // return $cant;
+
+        return $this->eventoPromotores->sum('cantidad_codigos');
     }
 }
