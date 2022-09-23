@@ -87,7 +87,7 @@ class ReportesController extends Controller
                 $query->where('id',auth()->user()->promotor_id);
             });
         }
-        $evento_zonas = $evento_zonas->get();
+        $evento_zonas = $evento_zonas->paginate(20);
 
         return view('pages.reportes.partials.evento-zona',compact('evento_zonas'));
     }
@@ -113,7 +113,7 @@ class ReportesController extends Controller
             $clientes = $clientes->where('usuario_registra_id',auth()->user()->promotor_id);
         }
 
-        $clientes = $clientes->get();
+        $clientes = $clientes->paginate(20);
 
         return view('pages.reportes.partials.cliente-promotor',compact('clientes'));
     }

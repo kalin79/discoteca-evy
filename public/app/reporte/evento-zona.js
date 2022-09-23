@@ -26,11 +26,6 @@ jQuery(function() {
 
     load();
 
-    $(document).on('click', '.pagination li a', function(e) {
-        e.preventDefault();
-        var url = $(this).attr('href');
-        load(url);
-    });
 
     $("#btn-export-excel").on('click',function (){
 
@@ -48,8 +43,20 @@ function load(url = null,filter=null) {
 
     $.get(url,filter ,function(data) {
         $('#table-content').html(data);
+        $(document).on('click', '.pagination li a', function(e) {
+            e.preventDefault();
+            var url = $(this).attr('href');
+            var filter ={
+                evento_id:$('#cmb_evento').val(),
+                zona_id: $('#cmb_zona').val()
+            };
+            load(url,filter);
+            e.stopImmediatePropagation();
+        });
     });
 }
+
+
 
 
 var load_zonas = function (ids) {

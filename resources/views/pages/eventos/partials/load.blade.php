@@ -41,7 +41,7 @@
                     </tbody>
                     <tfoot>
                     <tr >
-                        <td colspan="1">{{ $eventos->links() }}</td>
+                        <td colspan="3">{{ $eventos->links() }}</td>
                         <td><span>Total: </span> <b>{{ $eventos->total() }}</b></td>
                     </tr>
                     </tfoot>

@@ -8,13 +8,23 @@
     </tr>
     </thead>
     <tbody>
-    @forelse($clientes as $cliente)
-        <tr>
-            <td>{{$cliente->promotor->nombre}}</td>
-            <td>{{$cliente->nombres}} {{$cliente->apellidos}}</td>
-            <td>{{$cliente->codigo}}</td>
-            <td>{{$cliente->fecha_ingreso}}</td>
-        </tr>
-        @endforeach
+        @forelse($clientes as $cliente)
+            <tr>
+                <td>{{$cliente->promotor->nombre}}</td>
+                <td>{{$cliente->nombres}} {{$cliente->apellidos}}</td>
+                <td>{{$cliente->codigo}}</td>
+                <td>{{$cliente->fecha_ingreso}}</td>
+            </tr>
+        @empty
+            <tr>
+                <td colspan="4" class="text-center text-muted"><span>No se encontraron resultados</span></td>
+            </tr>
+        @endforelse
     </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">{{ $clientes->links() }}</td>
+            <td><span>Total: </span> <b>{{ $clientes->total() }}</b></td>
+        </tr>
+    </tfoot>
 </table>
