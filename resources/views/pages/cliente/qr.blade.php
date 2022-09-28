@@ -47,6 +47,17 @@
           margin-bottom: 1.25rem;
           /* line-height: 1.5em; */
      }
+     h5.card-title3{
+          background: white;
+          line-height: 1.5em;
+          color: #222222;
+          font-size: 25px;
+          font-weight: 700;
+          font-family: 'Roboto';
+          margin-bottom: 1.25rem;
+          padding: 1rem;
+          /* line-height: 1.5em; */
+     }
      .btn-primary{
           font-size: 18px;
           font-family: 'Roboto';
@@ -76,9 +87,15 @@
                              <p class="card-text">{{$cliente->nombres}} {{$cliente->apellidos}}</p>
                              <p class="card-text">DNI: {{$cliente->dni}}</p>
                              <p class="card-text">Promotor: {{$cliente->promotor->nombre}}</p>
-                             <div class="d-flex justify-content-center align-items-center">
-                                  <button type="submit" class="btn btn-primary">REGISTRAR</button>
-                             </div>
+                             
+                             @if ($cliente->ingreso == 0)
+                                   <div class="d-flex justify-content-center align-items-center">
+                                        <button type="submit" class="btn btn-primary">REGISTRAR</button>
+                                   </div>
+                             @else
+                                   <h5 class="card-title3">CLIENTE REGISTRADO</h5>
+                             @endif
+                             
                         </form>
                     </div>
 
