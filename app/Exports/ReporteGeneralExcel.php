@@ -49,8 +49,16 @@ class ReporteGeneralExcel implements FromView, ShouldAutoSize, WithTitle, WithEv
                 $array_key = explode('-',$key);
                 $evento_id = $array_key[0];
                 $zona_id = $array_key[1];
-                $cantidad_codigos_registrados = Cliente::where('evento_id',$evento_id)->where('zona_id',$zona_id)->count();
-                $cantidad_codigos_ingreso = Cliente::where('evento_id',$evento_id)->where('zona_id',$zona_id)->where('ingreso',1)->count();
+                if(auth()->user()->getRoleId()!=1){
+
+                    $cantidad_codigos_registrados = Cliente::where('evento_id',$evento_id)->where('zona_id',$zona_id)->where('promotor_id',auth()->user()->promotor_id)->count();
+                    $cantidad_codigos_ingreso = Cliente::where('evento_id',$evento_id)->where('zona_id',$zona_id)->where('ingreso',1)->where('promotor_id',auth()->user()->promotor_id)->count();
+
+
+                }else{
+                    $cantidad_codigos_registrados = Cliente::where('evento_id',$evento_id)->where('zona_id',$zona_id)->count();
+                    $cantidad_codigos_ingreso = Cliente::where('evento_id',$evento_id)->where('zona_id',$zona_id)->where('ingreso',1)->count();
+                }
                 return [
                     'evento' => Evento::find($evento_id)->nombre,
                     'zona'  =>Zona::find($zona_id)->nombre,

@@ -28,6 +28,7 @@ class ReportesController extends Controller
 
         $datos= EventoPromotor::whereHas('evento')->whereHas('zona')->filterDynamic($filters);
         if(auth()->user()->getRoleId()!=1){
+            //dd(auth()->user()->getRoleId());
             $datos = $datos->whereHas('promotor',function ($query){
                 $query->where('id',auth()->user()->promotor_id);
             });
@@ -44,8 +45,18 @@ class ReportesController extends Controller
                 $array_key = explode('-',$key);
                 $evento_id = $array_key[0];
                 $zona_id = $array_key[1];
-                $cantidad_codigos_registrados = Cliente::where('evento_id',$evento_id)->where('zona_id',$zona_id)->count();
-                $cantidad_codigos_ingreso = Cliente::where('evento_id',$evento_id)->where('zona_id',$zona_id)->where('ingreso',1)->count();
+                if(auth()->user()->getRoleId()!=1){
+
+                    $cantidad_codigos_registrados = Cliente::where('evento_id',$evento_id)->where('zona_id',$zona_id)->where('promotor_id',auth()->user()->promotor_id)->count();
+                    $cantidad_codigos_ingreso = Cliente::where('evento_id',$evento_id)->where('zona_id',$zona_id)->where('ingreso',1)->where('promotor_id',auth()->user()->promotor_id)->count();
+
+
+                }else{
+                    $cantidad_codigos_registrados = Cliente::where('evento_id',$evento_id)->where('zona_id',$zona_id)->count();
+                    $cantidad_codigos_ingreso = Cliente::where('evento_id',$evento_id)->where('zona_id',$zona_id)->where('ingreso',1)->count();
+                }
+
+
                 return [
                     'evento' => Evento::find($evento_id)->nombre,
                     'zona'  =>Zona::find($zona_id)->nombre,
@@ -87,7 +98,32 @@ class ReportesController extends Controller
                 $query->where('id',auth()->user()->promotor_id);
             });
         }
-        $evento_zonas = $evento_zonas->paginate(20);
+
+        //$evento_zonas = $evento_zonas->paginate(20);
+        $evento_zonas=$evento_zonas->get()
+            ->groupBy(function ($evento_promotor){
+                return $evento_promotor->evento->id."-".$evento_promotor->zona->id."-".$evento_promotor->promotor_id;
+            })->map(function ($evento,$key) {
+                //dd($evento,$key);
+                $cantidad_codigos= $evento->sum(function ($evento) {
+                    return $evento->cantidad_codigos ;
+                });
+
+                $array_key = explode('-',$key);
+                $evento_id = $array_key[0];
+                $zona_id = $array_key[1];
+                $promotor_id = $array_key[2];
+                $cantidad_codigos_registrados = Cliente::where('evento_id',$evento_id)->where('zona_id',$zona_id)->where('promotor_id',$promotor_id)->count();
+                $cantidad_codigos_ingreso = Cliente::where('evento_id',$evento_id)->where('zona_id',$zona_id)->where('ingreso',1)->where('promotor_id',$promotor_id)->count();
+                return [
+                    'evento' => Evento::find($evento_id)->nombre,
+                    'zona'  =>Zona::find($zona_id)->nombre,
+                    'promotor' => Promotor::find($promotor_id)->nombre,
+                    'cantidad_codigos' => $cantidad_codigos,
+                    'cantidad_codigos_registrados' => $cantidad_codigos_registrados,
+                    'cantidad_codigos_ingreso' => $cantidad_codigos_ingreso,
+                ];
+            })->toArray();
 
         return view('pages.reportes.partials.evento-zona',compact('evento_zonas'));
     }
@@ -112,8 +148,8 @@ class ReportesController extends Controller
         if(auth()->user()->getRoleId()!=1){
             $clientes = $clientes->where('usuario_registra_id',auth()->user()->promotor_id);
         }
-
-        $clientes = $clientes->paginate(20);
+        $clientes = $clientes->where('ingreso',1);
+        $clientes = $clientes->orderBy('evento_id')->paginate(20);
 
         return view('pages.reportes.partials.cliente-promotor',compact('clientes'));
     }

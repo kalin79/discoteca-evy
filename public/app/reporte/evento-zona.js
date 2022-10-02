@@ -27,6 +27,7 @@ jQuery(function() {
     load();
 
 
+
     $("#btn-export-excel").on('click',function (){
 
         window.open('/admin/reporte-evento-zona/export-data?evento_id=' + $('#cmb_evento').val() + "&zona_id=" + $('#cmb_zona').val(), '_target');
@@ -40,7 +41,7 @@ jQuery(function() {
 
 function load(url = null,filter=null) {
     var url = url ? url : url_reporte_load;
-
+    // console.log(1)
     $.get(url,filter ,function(data) {
         $('#table-content').html(data);
         $(document).on('click', '.pagination li a', function(e) {
@@ -55,8 +56,6 @@ function load(url = null,filter=null) {
         });
     });
 }
-
-
 
 
 var load_zonas = function (ids) {

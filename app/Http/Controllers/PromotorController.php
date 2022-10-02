@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\EventoPromotor;
 use App\Models\Promotor;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -73,6 +74,12 @@ class PromotorController extends Controller
 
         DB::beginTransaction();
         try {
+            $evento_promotor_count = EventoPromotor::where('promotor_id',$promotor->id)->count();
+            //dd($evento_promotor_count);
+            if($evento_promotor_count>0){
+                return  response()->json(['errors'=>'El promotor ya se encuentra asignado a un evento.'],422);
+            }
+
 
             $promotor->delete();
 

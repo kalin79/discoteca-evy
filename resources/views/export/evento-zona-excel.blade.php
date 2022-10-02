@@ -10,14 +10,14 @@
     </tr>
     </thead>
     <tbody>
-    @forelse($evento_zonas as $evento_zona)
+    @forelse($evento_zonas as $data)
         <tr>
-            <td>{{$evento_zona->evento->nombre}}</td>
-            <td>{{$evento_zona->zona->nombre}}</td>
-            <td>{{$evento_zona->promotor->nombre}}</td>
-            <td>{{$evento_zona->zona->cantidad_codigos}}</td>
-            <td>{{$evento_zona->cantidad_codigos_registrados}}</td>
-            <td>{{$evento_zona->cantidad_codigos_ingreso}}</td>
+            <td>{{$data['evento']}}</td>
+            <td>{{$data['zona']}}</td>
+            <td>{{$data['promotor']}}</td>
+            <td>{{$data['cantidad_codigos']}}</td>
+            <td>{{$data['cantidad_codigos_registrados']}}</td>
+            <td>{{$data['cantidad_codigos_ingreso']}}</td>
         </tr>
         @endforeach
     </tbody>

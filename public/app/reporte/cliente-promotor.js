@@ -8,6 +8,7 @@ jQuery(function() {
 
 
     $("#btn-add-filter").on('click',function (){
+
         var filter ={
             promotor_id:$('#cmb_promotores').val(),
         };
@@ -17,15 +18,14 @@ jQuery(function() {
 
     load();
 
-    $(document).on('click', '.pagination li a', function(e) {
-        e.preventDefault();
-        var url = $(this).attr('href');
-        load(url);
-    });
 
     $("#btn-export-excel").on('click',function (){
+        if($("#has_filtro").val()==1){
+            window.open('/admin/reporte-cliente-promotor/export-data?promotor_id=' + $('#cmb_promotores').val() , '_target');
+        }else{
+            window.open('/admin/reporte-cliente-promotor/export-data', '_target');
+        }
 
-        window.open('/admin/reporte-cliente-promotor/export-data?promotor_id=' + $('#cmb_promotores').val() , '_target');
 
     });
 
@@ -34,9 +34,20 @@ jQuery(function() {
 
 function load(url = null,filter=null) {
     var url = url ? url : url_reporte_load;
-
+    // console.log(3)
     $.get(url,filter ,function(data) {
         $('#table-content').html(data);
+        $(document).on('click', '.pagination li a', function(e) {
+            e.preventDefault();
+            var url_page = $(this).attr('href');
+            var filtro ={
+                promotor_id:$('#cmb_promotores').val(),
+            };
+            //console.log(url_page,filtro);
+            load(url_page,filtro);
+            e.stopImmediatePropagation();
+        });
+
     });
 }
 

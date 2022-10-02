@@ -99,6 +99,7 @@ jQuery(function() {
 
 
 function load(url = null) {
+    // console.log(2)
     var filters = get_filters();
     var url = url ? url : url_reporte_general_load;
     console.log(filters);

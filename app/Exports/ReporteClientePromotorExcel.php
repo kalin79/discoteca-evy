@@ -39,7 +39,7 @@ class ReporteClientePromotorExcel implements FromView, ShouldAutoSize, WithTitle
             $clientes = $clientes->where('usuario_registra_id',auth()->user()->promotor_id);
         }
 
-        $clientes = $clientes->get();
+        $clientes = $clientes->where('ingreso',1)->orderBy('evento_id')->get();
         $this->numref = count($clientes);
 
         return view('export.cliente-promotor-excel', [

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\EventoPromotor;
 use App\Models\Zona;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -61,7 +62,11 @@ class ZonaController extends Controller
 
         DB::beginTransaction();
         try {
-
+            $evento_promotor_count = EventoPromotor::where('zona_id',$zona->id)->count();
+            //dd($evento_promotor_count);
+            if($evento_promotor_count>0){
+                return  response()->json(['errors'=>'La zona ya se encuentra asignado a un evento.'],422);
+            }
             $zona->delete();
 
             DB::commit();

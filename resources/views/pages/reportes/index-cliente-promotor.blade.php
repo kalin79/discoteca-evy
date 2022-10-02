@@ -26,6 +26,7 @@
     </div>
 
     @if(auth()->user()->getRoleId()==1)
+        <input type="hidden" id="has_filtro" value="1">
         <div class="main-card mb-3 card">
             <div class="card-body">
 
@@ -47,6 +48,8 @@
             </div>
 
         </div>
+    @else
+        <input type="hidden" id="has_filtro" value="0">
     @endif
     <div class="row">
         <div class="col-md-12">
@@ -101,7 +104,7 @@
     <script src="{{ asset( 'architec-ui/js/vendors/charts/apex-charts.js' ) }}"></script>
 
 
-    <script src="/app/reporte/cliente-promotor.js"></script>
+    <script src="/app/reporte/cliente-promotor.js?v=6"></script>
 
     <!-- Validations JS -->
     @include('scripts-group.jquery-validation')
