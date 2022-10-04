@@ -19,7 +19,8 @@ class EventosController extends Controller
     }
 
     public function load(){
-        $eventos=Evento::whereHas('eventoPromotores')->withCount('eventoPromotores')->paginate(20);
+        // $eventos=Evento::whereHas('eventoPromotores')->withCount('eventoPromotores')->paginate(20);
+        $eventos=Evento::withCount('eventoPromotores')->paginate(20);
         return view('pages.eventos.partials.load',compact('eventos'));
     }
 
