@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\ClienteExport;
 use App\Http\Filters\Cliente\ClienteFilter;
 use App\Mail\RegisterClientNotification;
 use App\Models\Cliente;
@@ -102,6 +103,12 @@ class ClienteController extends Controller
 
 
     public function verificarqr(Request $request,Cliente $cliente){
+        $cliente->update([
+            'ingreso' =>1,
+            'fecha_ingreso' => date("Y-m-d H:i:s")
+        ]);
+
+        // return redirect()->route('cliente.gracias.qr');
         return view('pages.cliente.qr',compact('cliente'));
     }
 
@@ -154,11 +161,11 @@ class ClienteController extends Controller
         }
     }
 
-    public function exportExcel(Request $request){
-        //dd($request->evento_id,$filters);
+    public function exportExcel(ClienteFilter $filters){
+        //dd($filters);
 
         //$eventos_promotores_ids = EventoPromotor::filterDynamic($filters)->where("evento_id",$request->evento_id)->get()->pluck('id')->toArray();
-        //return Excel::download(new CodigoClientesExport($eventos_promotores_ids),'Codigos_'.date('Ymd').'.xlsx');
+        return Excel::download(new ClienteExport($filters),'Clientes_'.date('Ymd').'.xlsx');
         //return response()->json(true);
     }
 }

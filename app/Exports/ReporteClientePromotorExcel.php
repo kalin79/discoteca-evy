@@ -85,8 +85,8 @@ class ReporteClientePromotorExcel implements FromView, ShouldAutoSize, WithTitle
                             'color' => ['argb' => 'FFFFFF']
                         ]
                     ];
-                $event->sheet->getDelegate()->getStyle('A1:D1')->applyFromArray($styleArrayCabecera);
-                $event->sheet->getDelegate()->getStyle('A1:D' . ($this->numref+1))->applyFromArray($styleArray);
+                $event->sheet->getDelegate()->getStyle('A1:E1')->applyFromArray($styleArrayCabecera);
+                $event->sheet->getDelegate()->getStyle('A1:E' . ($this->numref+1))->applyFromArray($styleArray);
 
 
             },

@@ -1,5 +1,13 @@
 @extends('layouts.app')
 @section('content')
+    <form id="exportar-data" action="{{route('cliente.export-data')}}" method="POST">
+        @csrf
+
+        <input type="hidden" name="filters_aditional" id="filter_array_string_excel"/>
+        <input name="valor_filter" id="valor_filter_excel" type="hidden"/>
+        <input name="title_filter" id="title_filter_excel" type="hidden"/>
+        <button id="submit-export-excel" type="submit" style="display: none" ></button>
+    </form>
     <div class="app-page-title ">
         <div class="page-title-wrapper">
             <div class="page-title-heading">
@@ -25,17 +33,17 @@
                     </div>
                 </div>
             </div>
-            {{-- <div class="page-title-actions">
+            <div class="page-title-actions">
 
                 <div class="d-inline-block" style="background: white">
-                    <a href="{{route('cliente.import-data')}}" class="btn btn-outline-2x btn-outline-success entity-import">
+                    <button id="btn-export-excel"  class="btn btn-outline-2x btn-outline-success ">
                         <span class="btn-icon-wrapper ">
                             <i class="fa fa-download fa-w-20"></i>
                         </span>Exportar
-                    </a>
+                    </button>
                 </div>
 
-            </div> --}}
+            </div>
         </div>
     </div>
     @include('includes.search')

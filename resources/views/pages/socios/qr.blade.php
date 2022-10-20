@@ -73,9 +73,16 @@
                              <h5 class="card-title2">{{$socio->tipoUbicacion->nombre}}</h5>
                              <p class="card-text">{{$socio->nombres}} {{$socio->apellidos}}</p>
                              {{-- <p class="card-text">DNI: {{$socio->dni}}</p> --}}
-                             <div class="d-flex justify-content-center align-items-center">
+                             {{-- <div class="d-flex justify-content-center align-items-center">
                                   <button type="submit" class="btn btn-primary">REGISTRAR</button>
-                             </div>
+                             </div> --}}
+                             @if ($socio->ingreso == 0)
+                                   <div class="d-flex justify-content-center align-items-center">
+                                        <button type="submit" class="btn btn-primary">REGISTRAR</button>
+                                   </div>
+                             @else
+                             <h5 class="card-title3">SOCIO REGISTRADO</h5>
+                             @endif
                         </form>
                     </div>
                </div>

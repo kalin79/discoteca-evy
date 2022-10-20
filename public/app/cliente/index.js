@@ -185,6 +185,26 @@ jQuery(function() {
         var url = $(this).attr('href');
         load(url);
     })
+
+
+    $('#btn-export-excel').on('click', function(e){
+
+        var filters = get_filters();
+        $('#filter_array_string_excel').val(JSON.stringify(filters));
+        var title_filter = [];
+        var value_filter = [];
+
+        $('.tag-filter').each(function(){
+            var title = $('.field-name', this).html();
+            title_filter.push(title);
+            var value = $('.field-value', this).html();
+            value_filter.push(value);
+        });
+
+        $('#valor_filter_excel').val(value_filter.toString());
+        $('#title_filter_excel').val(title_filter.toString());
+        $('#submit-export-excel').trigger('click');
+    });
 });
 
 

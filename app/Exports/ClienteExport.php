@@ -2,6 +2,7 @@
 
 namespace App\Exports;
 
+use App\Models\Cliente;
 use App\Models\CodigosCliente;
 use App\Models\Evento;
 use App\Models\Promotor;
@@ -17,7 +18,7 @@ use Maatwebsite\Excel\Concerns\WithEvents;
 use Maatwebsite\Excel\Concerns\WithTitle;
 use Maatwebsite\Excel\Events\AfterSheet;
 
-class SociosExport implements FromView, ShouldAutoSize, WithTitle, WithEvents
+class ClienteExport implements FromView, ShouldAutoSize, WithTitle, WithEvents
 {
     var $numref;
     var $filtros;
@@ -29,11 +30,11 @@ class SociosExport implements FromView, ShouldAutoSize, WithTitle, WithEvents
 
     public function view(): View
     {
-        $socios = Socio::filterDynamic($this->filtros)->get();
+        $socios = Cliente::filterDynamic($this->filtros)->get();
         $this->numref = count($socios);
 
-        return view('export.socio-excel', [
-            'socios' => $socios,
+        return view('export.cliente-excel', [
+            'clientes' => $socios,
         ]);
     }
 
@@ -75,8 +76,8 @@ class SociosExport implements FromView, ShouldAutoSize, WithTitle, WithEvents
                             'color' => ['argb' => 'FFFFFF']
                         ]
                     ];
-                $event->sheet->getDelegate()->getStyle('A1:F1')->applyFromArray($styleArrayCabecera);
-                $event->sheet->getDelegate()->getStyle('A1:F' . ($this->numref+1))->applyFromArray($styleArray);
+                $event->sheet->getDelegate()->getStyle('A1:G1')->applyFromArray($styleArrayCabecera);
+                $event->sheet->getDelegate()->getStyle('A1:G' . ($this->numref+1))->applyFromArray($styleArray);
 
 
             },

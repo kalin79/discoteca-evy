@@ -49,6 +49,10 @@ class SociosController extends Controller
 
 
     public function verificarqr(Request $request,Socio $socio){
+        $socio->update([
+            'ingreso' =>1,
+            'fecha_ingreso' => date("Y-m-d H:i:s")
+        ]);
         return view('pages.socios.qr',compact('socio'));
     }
 

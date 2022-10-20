@@ -151,7 +151,7 @@ class EventoPromotorController extends Controller
 
 
     public function exportCodigos(EventoPromotor $evento_promotor){
-        //dd($request->all());
+        // dd($evento_promotor->all());
         return Excel::download(new CodigoClientesExport([$evento_promotor->id]),'Codigos_'.date('Ymd').'.xlsx');
         //return response()->json(true);
     }

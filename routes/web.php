@@ -110,7 +110,7 @@ Route::group(['prefix' => 'admin'], function () {
         Route::post('cliente/delete', "ClienteController@delete")->name('cliente.delete');
         Route::post('cliente/desactive', "ClienteController@desactive")->name('client.desactive');
         Route::post('cliente/active', "ClienteController@active")->name('cliente.active');
-        Route::post('cliente/export-data-excel', 'ClienteController@exportExcel')->name('cliente.import-data');
+        Route::post('cliente/export-data-excel', 'ClienteController@exportExcel')->name('cliente.export-data');
 
 
 
