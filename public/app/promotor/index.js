@@ -2,7 +2,7 @@ $(document).ready(function() {
     load();
     var data_fields = [
         { "id": 1, "text": "nombre", type: 'text', field: 'nombre' },
-        { "id": 1, "text": "DNI", type: 'text', field: 'dni' },
+        { "id": 2, "text": "DNI", type: 'text', field: 'dni' },
     ];
 
 

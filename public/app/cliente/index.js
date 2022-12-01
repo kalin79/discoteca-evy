@@ -1,8 +1,8 @@
 jQuery(function() {
     load();
     var data_fields = [
-        { "id": 1, "text": "Nombre", type: 'text', field: 'id_cuenta' },
-        { "id": 2, "text": "Apellidos", type: 'text', field: 'nombre' },
+        { "id": 1, "text": "Nombre", type: 'text', field: 'nombres' },
+        { "id": 2, "text": "Apellidos", type: 'text', field: 'apellidos' },
         {"id": 3, "text": "Promotor", type:'list', field : 'promotor_id',list: function(){return list_promotor()}, 'type_select2':true},
         {"id": 4, "text": "Evento", type:'list', field : 'evento_id',list: function(){return list_evento()}, 'type_select2':true},
         {"id": 5, "text": "Zona", type:'list', field : 'zona_id',list: function(){return list_zona()}, 'type_select2':true},
