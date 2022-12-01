@@ -96,7 +96,7 @@
   <script src="/js/datepicker/daterangepicker.js"></script>
  <!-- Select2 JavaScript -->
  <script src="/template-mintos/vendors/select2/dist/js/select2.full.min.js"></script>
- <script src="/app/cliente/index.js"></script>
+ <script src="/app/cliente/index.js?version={{ time() }}"></script>
 
  <!-- Validations JS -->
  @include('scripts-group.jquery-validation')
